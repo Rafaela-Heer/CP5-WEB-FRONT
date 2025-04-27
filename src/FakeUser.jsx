@@ -30,7 +30,7 @@ export default function FakeUser() {
 
   return (
     <>
-      <div className="flex mt-2 justify-between items-center p-2 border rounded-lg bg-gray-300">
+      <div className="flex mt-2 justify-between items-center p-2 border rounded-lg bg-rose-100">
         <div className="flex items-center gap-2">
           <div>
             <img src={user.urlPhoto} alt="" className="w-16 h-16 rounded-lg" />
@@ -47,9 +47,9 @@ export default function FakeUser() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center bg-gray-400 w-10 h-10 rounded-md">
+        <div className="flex items-center justify-center bg-rose-700 w-10 h-10 rounded-md">
           <Icon 
-            icon="mdi-refresh" className="text-3xl text-gray-700 cursor-pointer" onClick={loadUser}
+            icon="mdi-refresh" className="text-3xl text-gray-50 cursor-pointer" onClick={loadUser}
           />
         </div>
       </div>
