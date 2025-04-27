@@ -2,23 +2,27 @@ import { Icon } from "@iconify/react";
 import FakeUser from "./FakeUser";
 
 function App() {
-
   return (
     <>
-      <div className="">
-        <span className="p-1 mt-1 flex initial bg-gray-300 border rounded-md font-medium text-3x1">CP5</span>
-      </div>
-      <div className="border rounded-lg bg-white p-1 m-1">
-        <div className="p-1 font-bold">
-          Fake users list
+      <div className="p-4">
+        <div className="w-full max-w-md">
+          <div className="">
+            <span className="p-1 mt-1 flex initial bg-gray-300 border rounded-md font-medium text-3xl">CP5</span>
+          </div>
+
+          <div className="border rounded-lg bg-white p-4 m-2 shadow-md">
+            <div className="p-1 font-bold">
+              Fake users list
+            </div>
+            <hr className="my-2" />
+            {
+              [...Array(5).keys()].map((_, idx) => <FakeUser key={idx} />)
+            }
+          </div>
         </div>
-        <hr className="" />
-        {
-          [...Array(5).keys()].map((e, idx) => <FakeUser key={idx} />)
-        }
       </div>
     </>
   )
 }
 
-export default App
+export default App;
